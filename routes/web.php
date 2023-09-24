@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Models\Article;
 use App\Models\Category;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (Auth::check()) {
+        return redirect()->route('dashboard');
+    } else {
+        return redirect()->route('login');
+    }
+//    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -27,6 +33,8 @@ Route::get('/dashboard', function () {
 Route::get('/categories', function () {
     return view('categories', ['categories' => Category::query()->get()]);
 })->middleware(['auth', 'verified'])->name('categories');
+
+Route::post('/articles/{id}/update', [\App\Http\Controllers\ArticleController::class, 'update'])->name('articles.post_update');
 
 Route::resource('articles', \App\Http\Controllers\ArticleController::class)->middleware(['auth', 'verified']);
 

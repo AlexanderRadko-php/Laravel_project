@@ -12,8 +12,8 @@
                     <table>
                         @foreach($articles as $article)
                             <tr>
-                                <td>{{$article->name}}</td>
-                                <td>{{$article->category->name}}</td>
+                                <td><a href="{{route('articles.edit', ['article' => $article->id])}}">{{$article->name}}</a></td>
+                                <td>{{$article->category?->name}}</td>
                                 <td>{{$article->is_active}}</td>
                             </tr>
                         @endforeach
