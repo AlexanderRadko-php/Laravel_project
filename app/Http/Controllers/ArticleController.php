@@ -13,7 +13,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('articles', ['articles' => Article::query()->with('category')->paginate(10)]);
+        return view('articles', ['articles' => Article::query()->with('category')->orderBy('sort')->paginate(10)]);
     }
 
     /**
