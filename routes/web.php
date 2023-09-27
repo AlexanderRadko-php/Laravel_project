@@ -34,7 +34,7 @@ Route::get('/categories', function () {
     return view('categories', ['categories' => Category::query()->get()]);
 })->middleware(['auth', 'verified'])->name('categories');
 
-Route::post('/articles/{id}/update', [\App\Http\Controllers\ArticleController::class, 'update'])->name('articles.post_update');
+Route::post('/articles/{id}/update', [\App\Http\Controllers\ArticleController::class, 'update'])->name('articles.post_update')->middleware(['auth', 'verified']);
 
 Route::resource('articles', \App\Http\Controllers\ArticleController::class)->middleware(['auth', 'verified']);
 
