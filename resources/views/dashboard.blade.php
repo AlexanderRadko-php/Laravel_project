@@ -13,6 +13,36 @@
 {{--                    <a href="{{route('articles.create')}}">Create</a>--}}
 {{--                    <a href="{{route('articles.edit', ['article' => 1])}}">Edit</a>--}}
                 </div>
+                <h1 class="countdown-title">Countdown Clock</h1>
+                <div id="deadline-message" class="deadline-message">
+                    Time is up!
+                </div>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-number">
+                        <span class="days countdown-time"></span>
+                        <span class="countdown-text">Days</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="hours countdown-time"></span>
+                        <span class="countdown-text">Hours</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="minutes countdown-time"></span>
+                        <span class="countdown-text">Minutes</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="seconds countdown-time"></span>
+                        <span class="countdown-text">Seconds</span>
+                    </div>
+                </div>
+
+                <link rel="stylesheet" href="/assets/timer.css">
+                <script src="/assets/timer.js"></script>
+
+                <!--
+                https://denis-creative.com/jstimer/
+                https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+                -->
             </div>
         </div>
     </div>
