@@ -1,11 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
+        <div class="header-flex">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Articles') }}
+            {{ __('Статьи') }}
         </h2>
         @if (Auth::user()->isAdmin())
-        <a href="{{route('articles.create')}}" class="add-link">Добавить новую статью</a>
+        <a href="{{route('articles.create')}}" class="add-link button">Добавить новую статью</a>
         @endif
+        </div>
     </x-slot>
 
     <div class="py-12">

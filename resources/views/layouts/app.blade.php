@@ -13,7 +13,10 @@
         <link href="/build/assets/css/style.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="/assets/app.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        <link rel="stylesheet" href="/assets/timer.css">
         <script src="/assets/app.js"></script>
+        <script src="/assets/timer.js"></script>
 
         <!-- Scripts -->
 {{--        @vite(['resources/css/app.css', 'resources/js/app.js'])--}}

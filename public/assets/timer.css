@@ -5,40 +5,60 @@
 /*    font-weight: 100;*/
 /*}*/
 
+
+
 .countdown-title {
-    color: #396;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 40px 0px 20px;
+    color: #757575;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    /*margin: 40px 0px 20px;*/
+}
+
+.discount-title {
+    margin: 20px;
+    text-align: center;
+    color: #757575;
+    font-weight: 300;
+    font-size: 25px;
 }
 
 .countdown {
+    margin: 0 auto;
     font-family: sans-serif;
-    color: #fff;
+    color: #228B22;
     display: inline-block;
-    font-weight: 100;
+    font-weight: 500;
     text-align: center;
     font-size: 30px;
 }
 
+.timer_block {
+    display: flex;
+    flex-direction: row;
+}
+
 .countdown-number {
-    padding: 10px;
+    padding: 5px;
     border-radius: 3px;
-    background: #00bf96;
+    /*background: #00bf96;*/
     display: inline-block;
+    /*align-items: center;*/
 }
 
 .countdown-time {
-    padding: 15px;
+    padding: 0;
+    font-size: 30px;
     border-radius: 3px;
-    background: #00816a;
-    display: inline-block;
+    /*background: #00816a;*/
+    /*display: inline-block;*/
 }
 
 .countdown-text {
-    display: block;
+    /*display: block;*/
+    padding-left: 10px;
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .deadline-message{

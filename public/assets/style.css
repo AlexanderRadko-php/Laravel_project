@@ -1,0 +1,116 @@
+h1 {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+h6 {
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    gap: 30px;
+}
+
+.header-flex .button {
+    max-width: 300px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: 400;
+    color: #0000FF;
+}
+
+.button {
+    padding: 10px 15px;
+    border: 1px solid #2e2e2e;
+    background: transparent;
+    color: #2e2e2e;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.button:hover,
+.button:active {
+    background: #2e2e2e;
+    color: #ffffff;
+    outline: none;
+}
+
+.delete-button {
+    padding: 10px 15px;
+    border: 1px solid #ff3217;
+    background: #ff3217;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.delete-button:hover,
+.delete-button:active {
+    color: #ff3217;
+    background: #ffffff;
+    outline: none;
+}
+
+.list_table,
+.cat_table {
+    width: 100%;
+}
+
+.list_table th,
+.cat_table th {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.list_table td,
+.cat_table td {
+    padding: 20px 10px;
+}
+
+.list_table td:nth-child(3),
+.list_table td:nth-child(4) {
+    text-align: center;
+}
+
+.cat_table td:nth-child(1) {
+    text-align: center;
+}
+
+ul.pagination {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul.pagination li {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul.pagination li.active {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+/*Article-form*/
+
+.article-create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-create-form .button {
+    max-width: 300px;
+}
