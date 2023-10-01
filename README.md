@@ -13,7 +13,7 @@ cd Laravel_project - переходим в проект <br />
 
 Скопировать .env.example и создать в корне проекта файл .env, указать в этом файле название базы данных, порт, логин и пароль для подключения <br/>
 
-composer install или composer update (если composer уже установлен) - создает папку vendor <br />
+composer install - создает папку vendor <br />
 
 Создаем миграцию в базе данных </br>
 php artisan migrate <br/>
