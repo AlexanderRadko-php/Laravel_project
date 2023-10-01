@@ -14,9 +14,5 @@ composer install или composer update (если composer уже установ
 php artisan migrate
 Выполнить </br>
 php artisan db:seed
-Выполнить </br>
-php artisan db:seed CategorySeeder
-Выполнить </br>
-php artisan db:seed ArticleSeeder 
 
 php artisan serve - запускает локальный сервер с проектом <br />
