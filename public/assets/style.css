@@ -8,6 +8,13 @@ h6 {
     margin: 20px 0px;
 }
 
+/*.logo-link {*/
+/*    background: url("public/assets/images/logo.png");*/
+/*    !*background: red;*!*/
+/*    !*width: 20px;*!*/
+/*    !*height: 20px;*!*/
+/*}*/
+
 .header-flex {
     display: flex;
     flex-direction: column;
@@ -75,6 +82,10 @@ h6 {
     padding: 20px 10px;
 }
 
+.list_table .update-link:hover {
+    color: #0d6efd;
+}
+
 .list_table td:nth-child(3),
 .list_table td:nth-child(4) {
     text-align: center;
@@ -113,4 +124,33 @@ ul.pagination li.active {
 
 .article-create-form .button {
     max-width: 300px;
+}
+
+/*discount-stages*/
+
+.discount-main {
+    text-align: center;
+}
+
+
+.discount-stages {
+    padding: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+/*advantages*/
+
+.advantages-main {
+    text-align: center;
+}
+
+.advantages-list {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

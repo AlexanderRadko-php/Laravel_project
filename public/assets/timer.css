@@ -1,18 +1,8 @@
-/*body {*/
-/*    text-align: center;*/
-/*    background: #00ecb9;*/
-/*    font-family: sans-serif;*/
-/*    font-weight: 100;*/
-/*}*/
-
-
-
 .countdown-title {
     color: #757575;
     text-align: center;
     font-weight: 300;
     font-size: 25px;
-    /*margin: 40px 0px 20px;*/
 }
 
 .discount-title {
@@ -41,21 +31,16 @@
 .countdown-number {
     padding: 5px;
     border-radius: 3px;
-    /*background: #00bf96;*/
     display: inline-block;
-    /*align-items: center;*/
 }
 
 .countdown-time {
     padding: 0;
     font-size: 30px;
     border-radius: 3px;
-    /*background: #00816a;*/
-    /*display: inline-block;*/
 }
 
 .countdown-text {
-    /*display: block;*/
     padding-left: 10px;
     padding-top: 5px;
     font-size: 30px;
@@ -66,11 +51,3 @@
     font-size: 24px;
     font-style: italic;
 }
-
-/*.visible{*/
-/*    display: block;*/
-/*}*/
-
-/*.hidden{*/
-/*    display: none;*/
-/*}*/

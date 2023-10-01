@@ -12,16 +12,17 @@
                     <h6>Форма создания</h6>
                     <form method="post" class="article-create-form" enctype="multipart/form-data" action="{{$article->id ? route('articles.post_update', ['id' => $article->id]) : route('articles.store')}}" class="change-form">
                         @csrf
-                        <input type="text" name="name" value="{{$article->name}}">
-                        <input type="text" name="slug" value="{{$article->slug}}">
+                        <input type="text" name="name" value="{{$article->name}}" placeholder="Название">
+{{--                        <input type="text" name="slug" value="{{$article->slug}}">--}}
+                        <label>Категория</label>
                         <select type="text" name="category_id" value="{{$article->category}}">
                             @foreach($categories as $category)
                             <option value="{{$category->id}}">{{$category->name}}</option>
                             @endforeach
                         </select>
-                        <input type="text" name="content" value="{{$article->content}}">
-                        <input type="text" name="is_active" value="{{$article->is_active}}">
-                        <input type="text" name="sort" value="{{$article->sort}}">
+                        <input type="text" name="content" value="{{$article->content}}" placeholder="Содержание">
+                        <input type="text" name="is_active" value="{{$article->is_active}}" placeholder="Статус активности">
+{{--                        <input type="text" name="sort" value="{{$article->sort}}">--}}
                         <input type="file" name="image" value="{{$article}}">
                         <input type="submit" class="button">
                     </form>
