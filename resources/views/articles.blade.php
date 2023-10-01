@@ -25,7 +25,7 @@
                             <tr>
                                 <td>
                                     @if (Auth::user()->isAdmin())
-                                    <a href="{{route('articles.edit', ['article' => $article->id])}}">{{$article->name}}</a>
+                                    <a href="{{route('articles.edit', ['article' => $article->id])}}" class="update-link" title="Редактировать статью">{{$article->name}}</a>
                                         @else
                                         {{$article->name}}
                                     @endif

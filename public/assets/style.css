@@ -8,17 +8,9 @@ h6 {
     margin: 20px 0px;
 }
 
-/*.logo-link {*/
-/*    background: url("public/assets/images/logo.png");*/
-/*    !*background: red;*!*/
-/*    !*width: 20px;*!*/
-/*    !*height: 20px;*!*/
-/*}*/
-
 .header-flex {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     gap: 30px;
 }
 
@@ -120,6 +112,14 @@ ul.pagination li.active {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.article-create-form input {
+    max-width: 600px;
+}
+
+.article-create-form select {
+    margin-top: 10px;
 }
 
 .article-create-form .button {

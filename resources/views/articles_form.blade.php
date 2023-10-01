@@ -14,12 +14,13 @@
                         @csrf
                         <input type="text" name="name" value="{{$article->name}}" placeholder="Название">
 {{--                        <input type="text" name="slug" value="{{$article->slug}}">--}}
-                        <label>Категория</label>
+                        <label>Категория <br>
                         <select type="text" name="category_id" value="{{$article->category}}">
                             @foreach($categories as $category)
                             <option value="{{$category->id}}">{{$category->name}}</option>
                             @endforeach
                         </select>
+                        </label>
                         <input type="text" name="content" value="{{$article->content}}" placeholder="Содержание">
                         <input type="text" name="is_active" value="{{$article->is_active}}" placeholder="Статус активности">
 {{--                        <input type="text" name="sort" value="{{$article->sort}}">--}}
