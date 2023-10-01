@@ -20,12 +20,3 @@ php artisan db:seed CategorySeeder
 php artisan db:seed ArticleSeeder 
 
 php artisan serve - запускает локальный сервер с проектом <br />
-
-
-Для запуска vite нужно октрыть вторую консоль и установить npm </br>
-
-npm install
-
-Затем запустить проект </br>
-
-npm run dev
