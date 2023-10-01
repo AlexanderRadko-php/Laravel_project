@@ -1,9 +1,9 @@
-body {
-    text-align: center;
-    background: #00ecb9;
-    font-family: sans-serif;
-    font-weight: 100;
-}
+/*body {*/
+/*    text-align: center;*/
+/*    background: #00ecb9;*/
+/*    font-family: sans-serif;*/
+/*    font-weight: 100;*/
+/*}*/
 
 .countdown-title {
     color: #396;
@@ -47,10 +47,10 @@ body {
     font-style: italic;
 }
 
-.visible{
-    display: block;
-}
+/*.visible{*/
+/*    display: block;*/
+/*}*/
 
-.hidden{
-    display: none;
-}
+/*.hidden{*/
+/*    display: none;*/
+/*}*/

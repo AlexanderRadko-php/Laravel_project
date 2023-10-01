@@ -45,6 +45,8 @@ class ArticleController extends Controller
         $article->is_active = $request->integer('is_active');
         $article->sort = $request->integer('sort');
         $article->save();
+
+        return redirect()->route('articles.index');
     }
 
     /**

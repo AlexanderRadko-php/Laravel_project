@@ -3,7 +3,9 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Articles') }}
         </h2>
+        @if (Auth::user()->isAdmin())
         <a href="{{route('articles.create')}}" class="add-link">Добавить новую статью</a>
+        @endif
     </x-slot>
 
     <div class="py-12">
@@ -19,7 +21,13 @@
                         </tr>
                         @foreach($articles as $article)
                             <tr>
-                                <td><a href="{{route('articles.edit', ['article' => $article->id])}}">{{$article->name}}</a></td>
+                                <td>
+                                    @if (Auth::user()->isAdmin())
+                                    <a href="{{route('articles.edit', ['article' => $article->id])}}">{{$article->name}}</a>
+                                        @else
+                                        {{$article->name}}
+                                    @endif
+                                </td>
                                 <td>{{$article->category?->name}}</td>
                                 <td class="active_column">{{$article->is_active}}</td>
                                 <td class="photo_column">

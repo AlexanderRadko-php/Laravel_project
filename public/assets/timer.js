@@ -41,5 +41,5 @@ function initializeClock(id, endtime) {
 }
 
 //var deadline = "January 01 2018 00:00:00 GMT+0300"; //for Ukraine
-var deadline = new Date(Date.parse(new Date()) + 5 * 1000); // for endless timer
-initializeClock("countdown", deadline);
+// var deadline = new Date(Date.parse(new Date()) + 5 * 1000); // for endless timer
+// initializeClock("countdown", deadline);

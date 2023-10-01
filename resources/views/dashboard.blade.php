@@ -5,6 +5,8 @@
         </h2>
     </x-slot>
 
+{{--    <h1>$start_timer = {{\Illuminate\Support\Facades\Auth::user()->created_at}}</h1>--}}
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -38,7 +40,10 @@
 
                 <link rel="stylesheet" href="/assets/timer.css">
                 <script src="/assets/timer.js"></script>
-
+                <script>
+                    var deadline = new Date(Date.parse(new Date('{{\Illuminate\Support\Facades\Auth::user()->created_at}}')) + 24 * 4050 * 1000); // for endless timer
+                    initializeClock("countdown", deadline);
+                </script>
                 <!--
                 https://denis-creative.com/jstimer/
                 https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
@@ -47,3 +52,4 @@
         </div>
     </div>
 </x-app-layout>
+
